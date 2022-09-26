@@ -6,8 +6,7 @@ const app = express()
 const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
-const password ="yFmzj6qea1297Tbm";
-const user="fahim_test";
+
 const uri = `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.zpqcv.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 console.log(process.env.USER);
